@@ -1,0 +1,24 @@
+.dashboard-page .dashboard-page__filter-header {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.dashboard-page .dashboard-page__filter-header__item {
+    flex: 33.33%;
+    padding-top: 10px;
+}
+
+@media (max-width: 800px) {
+    .dashboard-page .dashboard-page__filter-header {
+        text-align: left;
+    }
+
+    .dashboard-page .dashboard-page__filter-header {
+        flex-direction: column;
+    }
+}
