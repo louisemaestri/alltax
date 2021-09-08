@@ -1,4 +1,10 @@
 .inline-select-field .inline-select-field__label {
     font-weight: bold;
     margin-right: 5px;
+    min-width: 85px;
+    display: inline-block;
+}
+
+.inline-select-field .inline-select-field__select {
+    min-width: 200px;
 }

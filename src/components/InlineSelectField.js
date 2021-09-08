@@ -5,7 +5,7 @@ function InlineSelectField({ label, data = [], onChange }) {
     return (
         <div className="inline-select-field">
             <span className="inline-select-field__label">{label}:</span>
-            <select onChange={onChange}>
+            <select onChange={onChange} className="inline-select-field__select">
                 {data.map(function(item) {
                     return (
                         <option 
