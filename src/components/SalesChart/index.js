@@ -64,7 +64,7 @@ function SalesChart({ data, categories }) {
                     show: false,
                 },
                 title: {
-                    text: 'Sales',
+                    text: "Sales",
                     offsetX: 10,
                 },
                 labels: {
