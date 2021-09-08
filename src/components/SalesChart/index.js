@@ -68,7 +68,7 @@ function SalesChart({ data, categories }) {
                     offsetX: 10,
                 },
                 labels: {
-                    show: false,
+                    show: true,
                     formatter: function (val) {
                         return val + "%";
                     }
