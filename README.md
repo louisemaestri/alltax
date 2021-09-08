@@ -34,4 +34,4 @@ Versão Mobile
 
 # Agradecimentos
 
-Desde já agradeço a oportunidade de estar participante desse processo seletivo. Tenho certeza que ele será de grande importância para o meu desenvolvimento profissional.
+Desde já agradeço a oportunidade de estar participando deste processo seletivo. Tenho certeza que ele será de grande importância para o meu desenvolvimento profissional.
