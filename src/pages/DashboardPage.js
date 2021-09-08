@@ -15,28 +15,28 @@ function DashboardPage ({}) {
     // Filtered Data
 
     const filteredProducts = APIService.products.filter(function (item) {
-        return item.categoryId == selectedCategory;
+        return item.categoryId === selectedCategory;
     });
 
     const filteredBrands = APIService.brands.filter(function (item) {
-        return item.productId == selectedProduct;
+        return item.productId === selectedProduct;
     });
 
     // Action Functions
 
     const onSelectCategory = function (id) {
-        setSelectedCategory(id);
+        setSelectedCategory(parseInt(id));
     };
 
     const onSelectProduct = function (id) {
-        setSelectedProduct(id);
+        setSelectedProduct(parseInt(id));
     };
 
     const onSelectBrand = function (id) {
-        setSelectedBrand(id);
+        setSelectedBrand(parseInt(id));
 
         const stats = APIService.brandSales.find(function(item) {
-            return item.brandId == id;
+            return item.brandId === parseInt(id);
         }) || [];
 
         setSelectedSales(stats.sales);
@@ -45,7 +45,9 @@ function DashboardPage ({}) {
     // Effects
 
     useEffect(function () {
-        setSelectedProduct(filteredProducts[0].id);
+        if (selectedCategory) {
+            setSelectedProduct(filteredProducts[0].id);
+        }
     }, [selectedCategory]);
 
     useEffect(function () {
