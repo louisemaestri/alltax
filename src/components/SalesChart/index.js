@@ -23,7 +23,7 @@ function SalesChart({ data, categories }) {
             dataLabels: {
                 enabled: true,
                 formatter: function (val) {
-                    return val + "%";
+                    return val;
                 },
                 offsetY: -20,
                 style: {
@@ -70,7 +70,7 @@ function SalesChart({ data, categories }) {
                 labels: {
                     show: true,
                     formatter: function (val) {
-                        return val + "%";
+                        return val;
                     }
                 }
             },
