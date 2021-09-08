@@ -82,10 +82,12 @@ function DashboardPage ({}) {
                     />
                 </div>
             </div>
-            <SalesChart
-                categories={["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]}
-                data={selectedSales}
-            />
+            <div className="dashboard-page__sales-chart">
+                <SalesChart
+                    categories={["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]}
+                    data={selectedSales}
+                />
+            </div>
         </div>
     )
 }

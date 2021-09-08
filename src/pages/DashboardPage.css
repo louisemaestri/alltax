@@ -22,3 +22,15 @@
         flex-direction: column;
     }
 }
+
+.dashboard-page .dashboard-page__sales-chart {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+@media (max-width: 800px) {
+    .dashboard-page .dashboard-page__sales-chart {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
