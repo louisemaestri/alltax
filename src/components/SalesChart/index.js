@@ -63,6 +63,10 @@ function SalesChart({ data, categories }) {
                 axisTicks: {
                     show: false,
                 },
+                title: {
+                    text: 'Sales',
+                    offsetX: 10,
+                },
                 labels: {
                     show: false,
                     formatter: function (val) {
